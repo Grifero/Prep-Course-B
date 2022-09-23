@@ -61,11 +61,8 @@ function devolverString(str) {
     // Devuelve "true" si el argumento de la función "num" es menor que noventa
     // De lo contrario, devuelve "false"
     // Tu código:
-    if(num < 90){
-      return true
-    } else {
-      return false
-    }
+ var menosQueNoventa = num < 90;
+ return menosQueNoventa;
   }
   
   function mayorQueCincuenta(num) {
@@ -91,9 +88,9 @@ function devolverString(str) {
     // De lo contrario, devuelve "false"
     // Tu código:
     if(num % 2 ===0){
-      return true
+      return true;
     } else {
-      return false
+      return false;
     }
   }
   
@@ -152,15 +149,15 @@ function devolverString(str) {
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
     // Tu código:
-    if(numero > 0){
-      return "Es positivo"
-    } else if(numero < 0){
-       return "Es negativo"
-    } else {
-      return false
+    if(numero === 0) {
+      return false;
+    } else if(numero > 0) {
+      return "Es positivo";
+    } if (numero < 0) {
+      return "Es negativo";
     }
   }
-  
+
   function agregarSimboloExclamacion(str) {
     // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
     // Ejemplo: "hello world" pasaría a ser "hello world!"
